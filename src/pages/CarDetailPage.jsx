@@ -21,7 +21,7 @@ const CarDetailPage = ({ car, onBack, searchCriteria, onStartBooking }) => {
 
     return (
         <div className="container mx-auto px-4 py-8">
-            <button onClick={onBack} className="mb-6 text-lime-600 hover:text-lime-800 font-semibold flex items-center">
+            <button onClick={onBack} className="mb-6 text-sky-600 hover:text-sky-800 font-semibold flex items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
@@ -52,7 +52,7 @@ const CarDetailPage = ({ car, onBack, searchCriteria, onStartBooking }) => {
                         </div>
                         <p className="text-gray-700 leading-relaxed">{car.description}</p>
                         <div className="mt-4 flex items-center text-gray-800">
-                            <PhoneIcon className="w-5 h-5 mr-2 text-lime-600" />
+                            <PhoneIcon className="w-5 h-5 mr-2 text-sky-600" />
                             <span>Contact: {car.owner.contactNumber}</span>
                         </div>
                     </div>
@@ -62,7 +62,7 @@ const CarDetailPage = ({ car, onBack, searchCriteria, onStartBooking }) => {
                         <div className="grid grid-cols-2 gap-4">
                             {car.features.map(feature => (
                                 <div key={feature} className="flex items-center text-gray-700">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-3 text-lime-500" viewBox="0 0 20 20" fill="currentColor">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-3 text-sky-500" viewBox="0 0 20 20" fill="currentColor">
                                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                                     </svg>
                                     <span>{feature}</span>
@@ -99,7 +99,7 @@ const CarDetailPage = ({ car, onBack, searchCriteria, onStartBooking }) => {
                         
                         <button 
                             onClick={handleBooking} 
-                            className="mt-6 w-full bg-lime-400 hover:bg-lime-500 text-gray-900 font-bold py-3 px-4 rounded-lg text-lg transition-transform transform hover:scale-105"
+                            className="mt-6 w-full bg-sky-400 hover:bg-sky-500 text-gray-900 font-bold py-3 px-4 rounded-lg text-lg transition-transform transform hover:scale-105"
                         >
                             Book Now
                         </button>

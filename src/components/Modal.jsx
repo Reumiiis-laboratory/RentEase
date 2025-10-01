@@ -33,7 +33,7 @@ export const LocationModal = ({ isOpen, onClose, location, setLocation, confirmA
         <div className="h-64 bg-gray-200 rounded-md flex items-center justify-center text-gray-500">
             <p>Google Maps Preview</p>
         </div>
-        <button onClick={confirmAction} className="mt-4 w-full bg-lime-400 hover:bg-lime-500 text-gray-800 font-bold py-2 px-4 rounded">
+        <button onClick={confirmAction} className="mt-4 w-full bg-sky-400 hover:bg-sky-500 text-gray-800 font-bold py-2 px-4 rounded">
             Confirm Location
         </button>
     </Modal>
@@ -46,7 +46,7 @@ export const DateTimePickerModal = ({ isOpen, onClose, date, setDate, title, con
             <label htmlFor="datetime" className="block text-sm font-medium text-gray-700">Date and Time</label>
             <input type="datetime-local" id="datetime" value={date} onChange={(e) => setDate(e.target.value)} className="mt-1 form-input"/>
         </div>
-        <button onClick={confirmAction} className="mt-6 w-full bg-lime-400 hover:bg-lime-500 text-gray-800 font-bold py-2 px-4 rounded">
+        <button onClick={confirmAction} className="mt-6 w-full bg-sky-400 hover:bg-sky-500 text-gray-800 font-bold py-2 px-4 rounded">
             Confirm
         </button>
     </Modal>

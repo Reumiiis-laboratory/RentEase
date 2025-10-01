@@ -33,7 +33,7 @@ const CarCard = ({ car, onSelect }) => {
                     {/* 👇 THIS IS THE FIX 👇 */}
                     <button 
                         onClick={handleButtonClick} 
-                        className="bg-lime-400 hover:bg-lime-500 text-gray-800 font-semibold py-2 px-4 rounded-lg text-sm"
+                        className="bg-sky-400 hover:bg-sky-500 text-gray-800 font-semibold py-2 px-4 rounded-lg text-sm"
                     >
                         Rent Now
                     </button>

@@ -53,7 +53,7 @@ const BookingDetailModal = ({ isOpen, onClose, onSubmitRating, booking }) => {
                     </div>
                      {canRate && (
                         <div className="mt-4 flex justify-end">
-                            <button onClick={handleRatingSubmit} className="px-4 py-2 bg-lime-500 text-white rounded-md hover:bg-lime-600 disabled:bg-lime-300" disabled={rating === 0}>
+                            <button onClick={handleRatingSubmit} className="px-4 py-2 sky-500 text-white rounded-md hover:bg-sky-600 disabled:bg-sky-300" disabled={rating === 0}>
                                 Submit Rating
                             </button>
                         </div>

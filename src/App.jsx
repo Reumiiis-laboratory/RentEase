@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 
 // Import Data
-import { initialBookings } from './data/mockData';
+import { initialBookings, initialHostBookings } from './data/mockData';
 
 // Import Components
 import Header from './components/Header';
@@ -16,11 +16,21 @@ import BookingPage from './pages/BookingPage';
 import MyBookingsPage from './pages/MyBookingsPage';
 import AccountPage from './pages/AccountPage';
 import HostCarPage from './pages/HostCarPage';
+import VerificationPage from './pages/VerificationPage';
+import MyListingsPage from './pages/MyListingsPage'; // Import the new page
 
 export default function App() {
     const [page, setPage] = useState('list');
+    
+    // State for verification
+    const [verificationStatus, setVerificationStatus] = useState('Not Verified');
+
     const [selectedCar, setSelectedCar] = useState(null);
     const [bookings, setBookings] = useState(initialBookings);
+    
+    // 👇 ADD STATE FOR THE NEW HOSTING DASHBOARD
+    const [hostBookings, setHostBookings] = useState(initialHostBookings);
+
     const [searchCriteria, setSearchCriteria] = useState({ location: '', startDate: '', endDate: '' });
     const [bookingDetails, setBookingDetails] = useState(null);
     const [isBookingConfirmed, setBookingConfirmed] = useState(false);
@@ -47,6 +57,10 @@ export default function App() {
         setBookingConfirmed(true);
     };
 
+    const handleVerificationSubmit = () => {
+        setVerificationStatus('Pending');
+    };
+
     const closeConfirmation = () => { setBookingConfirmed(false); navigateTo('bookings'); }
     
     // Modal Handlers
@@ -64,8 +78,13 @@ export default function App() {
             case 'detail': return <CarDetailPage car={selectedCar} onBack={handleBackToList} searchCriteria={searchCriteria} onStartBooking={handleStartBooking} />;
             case 'booking': return <BookingPage car={selectedCar} bookingDetails={bookingDetails} onBack={() => navigateTo('detail')} onConfirmBooking={handleConfirmBooking} />;
             case 'bookings': return <MyBookingsPage bookings={bookings} setBookings={setBookings} />;
-            case 'account': return <AccountPage />;
+            case 'account': return <AccountPage navigateTo={navigateTo} verificationStatus={verificationStatus} />;
             case 'host': return <HostCarPage />;
+            case 'verification': return <VerificationPage navigateTo={navigateTo} onSubmission={handleVerificationSubmit} />;
+            
+            // 👇 ADD THE NEW CASE FOR THE LISTINGS PAGE
+            case 'my-listings': return <MyListingsPage hostBookings={hostBookings} setHostBookings={setHostBookings} />;
+
             case 'list': 
             default: 
                 return <CarListPage onSelectCar={handleSelectCar} searchCriteria={searchCriteria} />;
@@ -102,7 +121,7 @@ export default function App() {
                         <p className="text-sm text-gray-500">Your car has been booked successfully. You can view the details in 'My Bookings'.</p>
                     </div>
                     <div className="mt-4">
-                        <button onClick={closeConfirmation} className="w-full bg-lime-500 hover:bg-lime-600 text-white font-bold py-2 px-4 rounded">
+                        <button onClick={closeConfirmation} className="w-full bg-sky-500 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded">
                             View My Bookings
                         </button>
                     </div>

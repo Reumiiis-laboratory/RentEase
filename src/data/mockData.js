@@ -10,10 +10,10 @@ export const mockCars = [
     reviews: 132,
     location: 'Manila, Philippines',
     coding: 'Wednesday',
-    image: 'https://placehold.co/400x300/e9f5db/4a5568?text=All+New+Rush',
+    image: 'https://placehold.co/400x300/e0f2fe/4a5568?text=All+New+Rush',
     owner: {
       name: 'John Doe',
-      avatar: 'https://placehold.co/100x100/cbd5e0/4a5568?text=JD',
+      avatar: 'https://placehold.co/100x100/ce0f2fe/4a5568?text=JD',
       joined: '2021',
       contactNumber: '+63 917 123 4567'
     },
@@ -30,10 +30,10 @@ export const mockCars = [
     reviews: 98,
     location: 'Quezon City, Philippines',
     coding: 'Monday',
-    image: 'https://placehold.co/400x300/e9f5db/4a5568?text=Compact+Car',
+    image: 'https://placehold.co/400x300/e0f2fe/4a5568?text=Compact+Car',
     owner: {
       name: 'Jane Smith',
-      avatar: 'https://placehold.co/100x100/cbd5e0/4a5568?text=JS',
+      avatar: 'https://placehold.co/100x100/e0f2fe/4a5568?text=JS',
       joined: '2022',
       contactNumber: '+63 918 234 5678'
     },
@@ -50,10 +50,10 @@ export const mockCars = [
     reviews: 75,
     location: 'Makati, Philippines',
     coding: 'Friday',
-    image: 'https://placehold.co/400x300/e9f5db/4a5568?text=Luxury+Sedan',
+    image: 'https://placehold.co/400x300/e0f2fe/4a5568?text=Luxury+Sedan',
     owner: {
       name: 'Robert Brown',
-      avatar: 'https://placehold.co/100x100/cbd5e0/4a5568?text=RB',
+      avatar: 'https://placehold.co/100x100/e0f2fe/4a5568?text=RB',
       joined: '2020',
       contactNumber: '+63 919 345 6789'
     },
@@ -70,10 +70,10 @@ export const mockCars = [
     reviews: 110,
     location: 'Cebu City, Philippines',
     coding: 'Tuesday',
-    image: 'https://placehold.co/400x300/e9f5db/4a5568?text=Family+Van',
+    image: 'https://placehold.co/400x300/e0f2fe/4a5568?text=Family+Van',
     owner: {
       name: 'Emily White',
-      avatar: 'https://placehold.co/100x100/cbd5e0/4a5568?text=EW',
+      avatar: 'https://placehold.co/100x100/e0f2fe/4a5568?text=EW',
       joined: '2021',
       contactNumber: '+63 920 456 7890'
     },
@@ -81,15 +81,21 @@ export const mockCars = [
     features: ['7-Seater', 'Rear Entertainment System', 'Spacious Cargo', 'Sliding Doors'],
     rules: ['Clean up after use', 'Long trips preferred'],
   },
-  { id: 5, name: 'All New Rush', type: 'Popular', price: 72.00, rating: 4.8, reviews: 132, location: 'Manila, Philippines', coding: 'Wednesday', image: 'https://placehold.co/400x300/e9f5db/4a5568?text=All+New+Rush', owner: { name: 'John Doe', avatar: 'https://placehold.co/100x100/cbd5e0/4a5568?text=JD', joined: '2021', contactNumber: '+63 917 123 4567' } },
-  { id: 6, name: 'Eco-Friendly Hybrid', type: 'Small Car', price: 65.00, rating: 4.9, reviews: 88, location: 'Davao City, Philippines', coding: 'Thursday', image: 'https://placehold.co/400x300/e9f5db/4a5568?text=Hybrid+Car', owner: { name: 'Jane Smith', avatar: 'https://placehold.co/100x100/cbd5e0/4a5568?text=JS', joined: '2022', contactNumber: '+63 918 234 5678' } },
-  { id: 7, name: 'Off-Road 4x4', type: 'Large Car', price: 110.00, rating: 4.6, reviews: 95, location: 'Baguio, Philippines', coding: 'Monday', image: 'https://placehold.co/400x300/e9f5db/4a5568?text=4x4+Truck', owner: { name: 'Robert Brown', avatar: 'https://placehold.co/100x100/cbd5e0/4a5568?text=RB', joined: '2020', contactNumber: '+63 919 345 6789' } },
-  { id: 8, name: 'Convertible Roadster', type: 'Exclusive Car', price: 180.00, rating: 4.9, reviews: 60, location: 'Tagaytay, Philippines', coding: 'Friday', image: 'https://placehold.co/400x300/e9f5db/4a5568?text=Convertible', owner: { name: 'Emily White', avatar: 'https://placehold.co/100x100/cbd5e0/4a5568?text=EW', joined: '2021', contactNumber: '+63 920 456 7890' } },
+  { id: 5, name: 'All New Rush', type: 'Popular', price: 72.00, rating: 4.8, reviews: 132, location: 'Manila, Philippines', coding: 'Wednesday', image: 'https://placehold.co/400x300/e0f2fe/4a5568?text=All+New+Rush', owner: { name: 'John Doe', avatar: 'https://placehold.co/100x100/cbd5e0/4a5568?text=JD', joined: '2021', contactNumber: '+63 917 123 4567' } },
+  { id: 6, name: 'Eco-Friendly Hybrid', type: 'Small Car', price: 65.00, rating: 4.9, reviews: 88, location: 'Davao City, Philippines', coding: 'Thursday', image: 'https://placehold.co/400x300/e0f2fe/4a5568?text=Hybrid+Car', owner: { name: 'Jane Smith', avatar: 'https://placehold.co/100x100/cbd5e0/4a5568?text=JS', joined: '2022', contactNumber: '+63 918 234 5678' } },
+  { id: 7, name: 'Off-Road 4x4', type: 'Large Car', price: 110.00, rating: 4.6, reviews: 95, location: 'Baguio, Philippines', coding: 'Monday', image: 'https://placehold.co/400x300/e0f2fe/4a5568?text=4x4+Truck', owner: { name: 'Robert Brown', avatar: 'https://placehold.co/100x100/cbd5e0/4a5568?text=RB', joined: '2020', contactNumber: '+63 919 345 6789' } },
+  { id: 8, name: 'Convertible Roadster', type: 'Exclusive Car', price: 180.00, rating: 4.9, reviews: 60, location: 'Tagaytay, Philippines', coding: 'Friday', image: 'https://placehold.co/400x300/e0f2fe/4a5568?text=Convertible', owner: { name: 'Emily White', avatar: 'https://placehold.co/100x100/cbd5e0/4a5568?text=EW', joined: '2021', contactNumber: '+63 920 456 7890' } },
 ];
 
 export const initialBookings = [
-    { id: 1, carName: 'Luxury Sedan', startDate: '2025-10-15', endDate: '2025-10-18', totalPrice: 450.00, status: 'Upcoming', image: 'https://placehold.co/400x300/e9f5db/4a5568?text=Luxury+Sedan', rating: null },
-    { id: 4, carName: 'All New Rush', startDate: '2025-11-01', endDate: '2025-11-03', totalPrice: 144.00, status: 'Pending', image: 'https://placehold.co/400x300/e9f5db/4a5568?text=All+New+Rush', rating: null },
-    { id: 2, carName: 'Family Van', startDate: '2025-09-20', endDate: '2025-09-25', totalPrice: 475.00, status: 'Completed', image: 'https://placehold.co/400x300/e9f5db/4a5568?text=Family+Van', rating: 4 },
-    { id: 3, carName: 'Compact Hatchback', startDate: '2025-08-10', endDate: '2025-08-12', totalPrice: 110.00, status: 'Cancelled', image: 'https://placehold.co/400x300/e9f5db/4a5568?text=Compact+Car', rating: null },
+    { id: 1, carName: 'Luxury Sedan', startDate: '2025-10-15', endDate: '2025-10-18', totalPrice: 450.00, status: 'Upcoming', image: 'https://placehold.co/400x300/e0f2fe/4a5568?text=Luxury+Sedan', rating: null },
+    { id: 4, carName: 'All New Rush', startDate: '2025-11-01', endDate: '2025-11-03', totalPrice: 144.00, status: 'Pending', image: 'https://placehold.co/400x300/e0f2fe/4a5568?text=All+New+Rush', rating: null },
+    { id: 2, carName: 'Family Van', startDate: '2025-09-20', endDate: '2025-09-25', totalPrice: 475.00, status: 'Completed', image: 'https://placehold.co/400x300/e0f2fe/4a5568?text=Family+Van', rating: 4 },
+    { id: 3, carName: 'Compact Hatchback', startDate: '2025-08-10', endDate: '2025-08-12', totalPrice: 110.00, status: 'Cancelled', image: 'https://placehold.co/400x300/e0f2fe/4a5568?text=Compact+Car', rating: null },
+];
+
+export const initialHostBookings = [
+    { id: 101, carName: 'All New Rush', renterName: 'Maria Clara', startDate: '2025-10-05', endDate: '2025-10-07', totalPrice: 144.00, status: 'New Request', image: 'https://placehold.co/400x300/e0f2fe/4a5568?text=All+New+Rush' },
+    { id: 102, carName: 'All New Rush', renterName: 'Jose Rizal', startDate: '2025-10-12', endDate: '2025-10-13', totalPrice: 72.00, status: 'Upcoming', image: 'https://placehold.co/400x300/e0f2fe/4a5568?text=All+New+Rush' },
+    { id: 103, carName: 'All New Rush', renterName: 'Andres Bonifacio', startDate: '2025-09-15', endDate: '2025-09-18', totalPrice: 216.00, status: 'Completed', image: 'https://placehold.co/400x300/e0f2fe/4a5568?text=All+New+Rush' },
 ];

@@ -7,7 +7,7 @@ const Header = ({ onLocationClick, onStartClick, onEndClick, onNotifClick, navig
     <header className="bg-gray-900 shadow-md sticky top-0 z-40">
         <div className="container mx-auto px-4 py-3 flex justify-between items-center">
             <button onClick={() => navigateTo('list')} className="flex-shrink-0">
-                <img className="h-8 w-auto" src="/renteaselogo.png" alt="RentEase" onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/150x50/111827/a3e635?text=RentEase'; }}/>
+                <img className="h-8 w-auto" src="/logorent.png" alt="RentEase" onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/150x50/111827/a3e635?text=RentEase'; }}/>
             </button>
             <div className="hidden md:flex items-center bg-white border border-gray-200 rounded-full shadow-sm">
                 
@@ -27,7 +27,7 @@ const Header = ({ onLocationClick, onStartClick, onEndClick, onNotifClick, navig
                     <CalendarIcon />
                     <span className="text-sm font-medium text-gray-700">{searchCriteria.endDate ? new Date(searchCriteria.endDate).toLocaleDateString() : 'Trip End'}</span>
                 </button>
-                <button onClick={handleSearch} className="p-2 bg-lime-400 hover:bg-lime-500 rounded-full m-1">
+                <button onClick={handleSearch} className="p-2 bg-sky-400 hover:bg-sky-500 rounded-full m-1">
                     <SearchIcon />
                 </button>
             </div>

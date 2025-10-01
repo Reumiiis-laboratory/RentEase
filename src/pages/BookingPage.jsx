@@ -26,7 +26,7 @@ const BookingPage = ({ car, bookingDetails, onBack, onConfirmBooking }) => {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
                 <div className="lg:col-span-2">
                     <div className="flex items-center mb-6">
-                        <button onClick={onBack} className="text-lime-600 hover:text-lime-800 mr-4">
+                        <button onClick={onBack} className="text-sky-600 hover:text-sky-800 mr-4">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
                                 <path fillRule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clipRule="evenodd" />
                             </svg>
@@ -64,7 +64,7 @@ const BookingPage = ({ car, bookingDetails, onBack, onConfirmBooking }) => {
                             {/* 👇 STYLING UPDATED ON THIS DIV 👇 */}
                             <div className="flex justify-between font-bold text-lg mt-4 pt-4 border-t border-gray-200"><span>Total</span><span>Php {totalPrice.toFixed(2)}</span></div>
                         </div>
-                        <button onClick={() => setPaymentModalOpen(true)} className="mt-6 w-full bg-lime-400 hover:bg-lime-500 text-gray-800 font-bold py-3 px-4 rounded-lg text-lg">
+                        <button onClick={() => setPaymentModalOpen(true)} className="mt-6 w-full bg-sky-400 hover:bg-sky-500 text-gray-800 font-bold py-3 px-4 rounded-lg text-lg">
                             Proceed to Payment
                         </button>
                     </div>
@@ -80,11 +80,11 @@ const BookingPage = ({ car, bookingDetails, onBack, onConfirmBooking }) => {
                         <input type="text" placeholder="CVC" className="form-input" />
                     </div>
                     <input type="text" placeholder="Cardholder Name" className="form-input" />
-                    <button type="button" onClick={handleBooking} className="w-full bg-lime-400 hover:bg-lime-500 text-gray-800 font-bold py-2 px-4 rounded">
+                    <button type="button" onClick={handleBooking} className="w-full bg-sky-400 hover:bg-sky-500 text-gray-800 font-bold py-2 px-4 rounded">
                         Pay Php {totalPrice.toFixed(2)}
                     </button>
                 </form>
-            </Modal>
+            </Modal>S
         </main>
     );
 };

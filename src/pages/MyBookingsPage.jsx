@@ -31,7 +31,7 @@ const MyBookingsPage = ({ bookings, setBookings }) => {
             <div className="mb-8 border-gray-200 border-b">
                 <nav className="-mb-px flex space-x-8" aria-label="Tabs">
                     {tabs.map(tab => (
-                        <button key={tab} onClick={() => setActiveTab(tab)} className={`${ activeTab === tab ? 'border-lime-500 text-gray-900' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300' } whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm transition-colors`}>
+                        <button key={tab} onClick={() => setActiveTab(tab)} className={`${ activeTab === tab ? 'border-sky-500 text-gray-900' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300' } whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm transition-colors`}>
                             {tab}
                         </button>
                     ))}
@@ -62,7 +62,7 @@ const MyBookingsPage = ({ bookings, setBookings }) => {
                                     </button>
                                 )}
                                 {booking.status === 'Completed' && (
-                                    <button onClick={(e) => { e.stopPropagation(); setSelectedBooking(booking);}} className="bg-lime-100 text-lime-700 hover:bg-lime-200 font-semibold py-2 px-4 rounded-lg text-sm transition-colors">
+                                    <button onClick={(e) => { e.stopPropagation(); setSelectedBooking(booking);}} className="bg-sky-100 text-sky-700 hover:bg-sky-200 font-semibold py-2 px-4 rounded-lg text-sm transition-colors">
                                         {booking.rating ? "View Rating" : "Rate Experience"}
                                     </button>
                                 )}

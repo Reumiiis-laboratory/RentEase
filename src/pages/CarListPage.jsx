@@ -24,8 +24,8 @@ const CarListPage = ({ onSelectCar, searchCriteria }) => {
         <main className="container mx-auto px-4 py-8">
             {/* A banner that appears only when a search location is provided */}
             {searchCriteria.location && (
-                <div className="mb-6 p-4 bg-lime-100 border-l-4 border-lime-500 rounded-r-lg">
-                    <p className="font-semibold text-lime-800">Showing results for "{searchCriteria.location}"</p>
+                <div className="mb-6 p-4 bg-sky-100 border-l-4 border-sky-500 rounded-r-lg">
+                    <p className="font-semibold text-sky-800">Showing results for "{searchCriteria.location}"</p>
                 </div>
             )}
             
@@ -33,7 +33,7 @@ const CarListPage = ({ onSelectCar, searchCriteria }) => {
             <div className="mb-8 border-b border-gray-200">
                 <nav className="-mb-px flex space-x-8" aria-label="Tabs">
                     {filters.map(filter => (
-                        <button key={filter} onClick={() => setActiveFilter(filter)} className={`${ activeFilter === filter ? 'border-lime-500 text-gray-900' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300' } whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm transition-colors`}>
+                        <button key={filter} onClick={() => setActiveFilter(filter)} className={`${ activeFilter === filter ? 'border-sky-500 text-gray-900' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300' } whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm transition-colors`}>
                             {filter}
                         </button>
                     ))}

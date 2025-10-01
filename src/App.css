@@ -10,6 +10,6 @@
 } 
 
 .form-input:focus-within, .form-input:focus { 
-    box-shadow: 0 0 0 3px rgba(163, 230, 53, 0.4); 
-    border-color: #A3E635; 
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.4); 
+    border-color: #38bdf8; 
 }

@@ -52,7 +52,7 @@ const HostCarPage = () => {
                     </div>
                     <div>
                         <h3 className="text-lg font-semibold text-gray-800 mb-4 border-b pb-2 border-gray-200">Car Features</h3>
-                        <div className="flex flex-wrap gap-2 mb-2">{features.map((feature, index) => ( <div key={index} className="bg-lime-200 text-lime-800 px-2 py-1 rounded-full flex items-center text-sm">{feature}<button type="button" onClick={() => setFeatures(features.filter(f => f !== feature))} className="ml-2 text-lime-800 hover:text-lime-900 font-bold">×</button></div> ))}</div>
+                        <div className="flex flex-wrap gap-2 mb-2">{features.map((feature, index) => ( <div key={index} className="bg-sky-200 text-sky-800 px-2 py-1 rounded-full flex items-center text-sm">{feature}<button type="button" onClick={() => setFeatures(features.filter(f => f !== feature))} className="ml-2 text-sky-800 hover:text-sky-900 font-bold">×</button></div> ))}</div>
                         <input type="text" value={currentFeature} onChange={(e) => setCurrentFeature(e.target.value)} onKeyDown={handleAddFeature} placeholder="Add a feature and press Enter" className="form-input"/>
                     </div>
                     <div>
@@ -65,7 +65,7 @@ const HostCarPage = () => {
                         <div className="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-md">
                             <div className="space-y-1 text-center">
                                 <svg className="mx-auto h-12 w-12 text-gray-400" stroke="currentColor" fill="none" viewBox="0 0 48 48" aria-hidden="true"><path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
-                                <p className="text-sm text-gray-600">Drag and drop or <button type="button" className="font-medium text-lime-600 hover:text-lime-500">click to browse</button></p>
+                                <p className="text-sm text-gray-600">Drag and drop or <button type="button" className="font-medium text-sky-600 hover:text-sky-500">click to browse</button></p>
                             </div>
                         </div>
                     </div>
@@ -77,7 +77,7 @@ const HostCarPage = () => {
                         </div>
                     </div>
                     <div className="flex justify-end pt-4">
-                        <button type="submit" className="bg-lime-500 hover:bg-lime-600 text-white font-bold py-3 px-8 rounded-lg">
+                        <button type="submit" className="bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-8 rounded-lg">
                             Submit Listing
                         </button>
                     </div>
