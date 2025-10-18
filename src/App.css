@@ -52,8 +52,8 @@ body {
 
 /* Hero Section - Gradient with Blue & Light Overlay */
 .hero {
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.9), rgba(16, 185, 129, 0.6)), 
-              url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.9), rgba(16, 185, 129, 0.6)),
+    url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
   color: white;
   text-align: center;
   padding: 8rem 1rem 5rem;
@@ -340,39 +340,39 @@ body {
   .grid-cols-3 {
     grid-template-columns: repeat(3, 1fr);
   }
-  
+
   .grid-cols-4 {
     grid-template-columns: repeat(4, 1fr);
   }
-  
+
   .flex-row {
     flex-direction: row;
   }
-  
+
   .justify-between {
     justify-content: space-between;
   }
-  
+
   .items-center {
     align-items: center;
   }
-  
+
   .space-x-4 > * + * {
     margin-left: 1rem;
   }
-  
+
   .space-x-8 > * + * {
     margin-left: 2rem;
   }
-  
+
   .space-y-2 > * + * {
     margin-top: 0.5rem;
   }
-  
+
   .space-y-4 > * + * {
     margin-top: 1rem;
   }
-  
+
   .space-y-8 > * + * {
     margin-top: 2rem;
   }
@@ -415,6 +415,116 @@ body {
   color: #D1D5DB; /* Light gray text */
 }
 
+/* HowItWorks Component Styles */
+.how-it-works {
+  background-color: var(--gray-50); /* Light gray background */
+  padding: 4rem 1rem; /* Matches .section */
+}
+
+.step {
+  padding: 1.5rem; /* p-6 equivalent */
+  background-color: #FFFFFF; /* White background */
+  border-radius: var(--radius-md); /* Rounded corners */
+  box-shadow: var(--shadow-md); /* Shadow */
+  transition: box-shadow 0.3s ease;
+}
+
+.step:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+.icon {
+  font-size: 2.5rem; /* Large emoji */
+  color: var(--primary); /* Blue color */
+  margin-bottom: 1rem;
+}
+
+.how-it-works h3 {
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.how-it-works p {
+  color: var(--muted-foreground);
+}
+
+/* Why RentEase Grid - Updated to 3 columns for horizontal layout */
+.how-it-works .grid.md\:grid-cols-3 {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .how-it-works .grid.md\:grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.how-it-works .p-4 {
+  padding: 1rem;
+  border-radius: var(--radius-md);
+}
+
+.how-it-works .bg-green-50 {
+  background-color: rgba(16, 185, 129, 0.1); /* Light green tint */
+}
+
+.how-it-works .bg-gray-100 {
+  background-color: var(--gray-100);
+}
+
+.how-it-works .text-primary {
+  color: var(--primary);
+}
+
+/* FAQ Styles */
+.faq {
+  text-align: left;
+  max-width: 42rem; /* max-w-2xl equivalent */
+  margin: 0 auto;
+  gap: 1rem; /* space-y-4 equivalent */
+}
+
+.faq details {
+  padding: 1rem; /* p-4 */
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background-color: #FFFFFF;
+  transition: box-shadow 0.2s ease;
+}
+
+.faq details:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.faq summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--foreground);
+  list-style: none;
+  outline: none;
+}
+
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq summary::after {
+  content: '▶';
+  float: right;
+  transition: transform 0.2s ease;
+}
+
+.faq details[open] summary::after {
+  transform: rotate(90deg);
+}
+
+.faq p {
+  margin-top: 0.5rem;
+  color: var(--muted-foreground);
+}
+
 /* Animations */
 .fade-in {
   animation: fadeIn 0.5s ease-in-out;
@@ -447,45 +557,45 @@ body {
   .hero {
     padding: 5rem 1rem 3rem;
   }
-  
+
   .hero h1 {
     font-size: 2.5rem;
   }
-  
+
   .btn-primary,
   .btn-secondary {
     padding: 0.625rem 1.5rem;
     font-size: 0.95rem;
     width: 100%;
   }
-  
+
   .auth-container {
     margin-top: 3rem;
     padding: 1.5rem;
     max-width: 90%;
   }
-  
+
   .tab-nav {
     flex-direction: column;
   }
-  
+
   .tab-link {
     border-bottom: none;
     border-right: 1px solid var(--border);
   }
-  
+
   .tab-link:last-child {
     border-right: none;
   }
-  
+
   .grid-cols-3 {
     grid-template-columns: 1fr;
   }
-  
+
   .navbar .container > div:last-child {
     display: none;
   }
-  
+
   #mobile-menu-btn {
     display: block;
   }
@@ -495,11 +605,11 @@ body {
   #mobile-menu-btn {
     display: none;
   }
-  
+
   #mobile-menu {
     display: none !important;
   }
-  
+
   #desktop-menu {
     display: flex;
   }
@@ -531,9 +641,4 @@ body {
 .error-page a {
   color: var(--primary);
   text-decoration: none;
-  font-weight: 600;
-}
-
-.error-page a:hover {
-  text-decoration: underline;
 }

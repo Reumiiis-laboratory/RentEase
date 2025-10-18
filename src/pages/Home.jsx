@@ -1,4 +1,6 @@
+// src/pages/Home.jsx
 import React, { useState } from 'react';
+import HowItWorks from '../components/HowItWorks'; // adjust path if needed
 
 function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -67,7 +69,7 @@ function FeaturedVehicles() {
     <section id="vehicles" className="section">
       <div className="container">
         <h2 className="text-center font-bold text-3xl mb-8">Featured Vehicles</h2>
-        <div className="grid grid-cols-3">
+        <div className="grid grid-cols-3 gap-6">
           <CarCard
             imgSrc="https://novago.africa/wp-content/uploads/2024/06/TOYOTA-FORTUNER-1.jpg.webp"
             alt="SUV"
@@ -141,18 +143,19 @@ function Footer() {
           <p>Phone: +63 912 345 6789</p>
         </div>
       </div>
-      <div className="border-t">
+      <div className="border-t mt-4">
         <p>&copy; 2025 RentEase. All Rights Reserved.</p>
       </div>
     </footer>
   );
 }
 
-export default function App() {
+export default function Home() {
   return (
     <>
       <Navbar />
       <Hero />
+      <HowItWorks />       {/* Added the 3-step + FAQ section */}
       <FeaturedVehicles />
       <About />
       <Contact />
